@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+form label {
+    font-weight: bold;
+    text-align: right;
+    margin-right: 0.5rem;
+}
+
+form input, form select, form button {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    grid-column: span 2;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+table th {
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+button#printButton {
+    display: block;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button#printButton:hover {
+    background: #45a049;
+}
+
+footer {
+    text-align: center;
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color:blue; /* White color to match footer background */
+    text-decoration: underline; /* Underlined for emphasis */
+    font-weight: bold; /* Optional: make it bold */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffeb3b; /* Highlighted color on hover */
+}
+
+
+@media screen and (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    form label {
+        text-align: left;
+    }
+
+    form button {
+        grid-column: span 1;
+    }
+
+    table th, table td {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
